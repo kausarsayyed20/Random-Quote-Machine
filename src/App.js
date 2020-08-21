@@ -38,14 +38,14 @@ class App extends Component {
     this.setState({
       currentquote: quotes[quotesdata].quote,
       currentauthor:quotes[quotesdata].author,
-      randomIndex: Math.floor(Math.random() * 20)
+      randomIndex: Math.floor(Math.random() * 12)
     });
     
   }
 
   render() {
     
-    const colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
+    const colors = ['#7FFF00', '#00FFFF', '#8FBC8F', '#FF1493', '#FFD700', '#808080', '#ADFF2F', '#4B0082', "#800000", "#FF4500", "#FF6347", "#A0522D"];
    const { data, currentquote, currentauthor } = this.state;
     const randomcolor = colors[this.state.randomIndex];
     return (
@@ -71,6 +71,7 @@ class App extends Component {
        <FaTwitter /> 
       </a>
 
+        
       <button className="button" id="new-quote" onClick={()=>this.getQuote(data)} style={{ backgroundColor: randomcolor }}>New quote</button>
     </div>
   </div>
