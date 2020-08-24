@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css";
-import { FaTwitter, FaIcons } from "react-icons/fa";
+import { FaTwitter} from "react-icons/fa";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -52,7 +52,7 @@ class App extends Component {
       <div id="wrapper" className="app" style={{ backgroundColor: randomcolor }} >
          <div id="quote-box" >
     <div className="quote-text" style={{ color: randomcolor }}>
-    <FaIcons icon="quote-left"  pull="left"/>
+    
     <span id="text">{currentquote}</span>
     </div>
     <div className="quote-author" style={{ color: randomcolor }}>
